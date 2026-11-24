@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Fake Bird",
+    "slug": "fake-bird-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.austudio.fakebird"
+    },
+    "android": {
+      "package": "app.austudio.fakebird"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Fake Bird usa tus fotos para personalizar tus personajes y publicaciones.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ]
+    ]
+  }
+}
