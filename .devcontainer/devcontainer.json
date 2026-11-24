@@ -1,0 +1,12 @@
+{
+  "name": "Fake Bird Mobile — Expo 58",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "postCreateCommand": "npm install --prefix mobile && npm test --prefix mobile",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}
