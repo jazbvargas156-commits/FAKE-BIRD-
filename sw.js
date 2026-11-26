@@ -1,4 +1,4 @@
-const CACHE='fake-bird-beta-v31';
+const CACHE='fake-bird-beta-v32';
 const FILES=['./index.html','./manifest.webmanifest','./icon-192.png'];
 self.addEventListener('install',e=>e.waitUntil((async()=>{let cache=await caches.open(CACHE);await cache.addAll(FILES.map(url=>new Request(url,{cache:'reload'})));await self.skipWaiting()})()));
 self.addEventListener('activate',e=>e.waitUntil((async()=>{let ks=await caches.keys();await Promise.all(ks.filter(k=>k.startsWith('fake-bird-')&&k!==CACHE).map(k=>caches.delete(k)));await self.clients.claim()})()));
